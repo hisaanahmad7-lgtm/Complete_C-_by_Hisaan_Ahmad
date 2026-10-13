@@ -2,6 +2,8 @@
 using namespace std;
 
 int main(){
+
+    cout<<"Hisaan Ahmad"<<endl;
     int num1, num2;
     cout << "Enter 1st number and 2nd number: " << endl;
     cin >> num1 >> num2;
