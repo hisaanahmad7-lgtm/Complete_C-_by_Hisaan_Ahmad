@@ -7,5 +7,5 @@ int main(){
     cin >> num1 >> num2;
     cout << "Sum: " << num1 + num2 << endl;
     cout<<"Program executed successfully.."<<endl;
-    return 45 ;
+    return 0;
 }
