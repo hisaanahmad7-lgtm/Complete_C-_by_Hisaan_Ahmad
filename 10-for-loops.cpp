@@ -30,7 +30,7 @@ int main(){
     cout<<endl;
     int loop = 0;
     int user_choice;
-    cout << "Enter your choice";
+    cout << "Enter your choice : ";
     cin >> user_choice;
 
     for(loop = 0 ; loop<=10 ; loop++){
