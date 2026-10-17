@@ -18,6 +18,10 @@ union salary{
     // float salaryss;
     float good_salary;
 };
+
+
+enum Seasons{spring , summer , winter , antum};
+
 int main() {
     Data emp;
     Data emp2;
@@ -35,10 +39,16 @@ int main() {
     cout<<name.c1<<endl;
 
 
-salary my_sal;
-my_sal.salarys = 10000;
-my_sal.good_salary = 55256.55;
-cout<<"MY salary is "<<my_sal.salarys<<endl;
-cout<<"MY salary is "<<my_sal.good_salary<<endl;
+salary empl;
+salary empl2;
+empl.salarys = 10000;
+empl2.good_salary = 55256.55;
+cout<<"MY salary is "<<empl.salarys<<endl;
+cout<<"MY salary is "<<empl2.good_salary<<endl;
+
+
+
+Seasons first = antum;
+cout<<first;
     return 0;
 }
