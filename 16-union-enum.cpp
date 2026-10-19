@@ -2,7 +2,12 @@
 #include <iomanip>
 
 using namespace std;
-
+struct student{
+    string name;
+    int classes;
+    int age;
+    char grade;
+};
 union Data {
     int id;
     char code;
@@ -50,5 +55,8 @@ cout<<"MY salary is "<<empl2.good_salary<<endl;
 
 Seasons first = antum;
 cout<<first;
+
+struct student s1 = {"Hisaan Ahamd" , 12 , 20 , 'A'};
+cout<<s1.name<<endl<<s1.classes<<endl<<s1.age<<endl<<s1.grade<<endl;
     return 0;
 }
