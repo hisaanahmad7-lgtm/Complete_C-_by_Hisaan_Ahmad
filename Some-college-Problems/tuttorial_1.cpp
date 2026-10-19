@@ -66,6 +66,13 @@ int main() {
 
     // Problem no 6
 
-    // problem no 6 is irrelevant we study this problem during pointers 
-    return 0;
+    int a = 4;
+    int b = 7;
+    int temp = 0;
+    cout<<a<<endl<<b<<endl;
+    temp = a;
+    a = b;
+    b = temp;
+    cout<<a<<endl<<b<<endl;
+        return 0;
 }
