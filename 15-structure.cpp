@@ -3,11 +3,18 @@
 
 using namespace std;
 
-typedef struct {
+// typedef struct {
+//     int age;
+//     float salary;
+//     char grade;
+// } Employee;
+
+struct student{
+    string name;
     int age;
-    float salary;
+    int DOB;
     char grade;
-} Employee;
+};
 
 int main() {
     // Employee hisaans;
@@ -20,16 +27,23 @@ int main() {
     // my_hisaan.salary = 1000000;
     // my_hisaan.grade = 'b';
     
-    Employee hisaans = {2000, 1000000, 'b'};
-    Employee my_hisaan = {22, 50000, 'A'};
+//     Employee hisaans = {2000, 1000000, 'b'};
+//     Employee my_hisaan = {22, 50000, 'A'};
     
-    cout << "The age of emp1 is : " << hisaans.age << endl; 
-    cout<< "The salary of emp1 is : " << hisaans.salary << endl; 
-    cout<< "The grade of Emp1 is : " << hisaans.grade << endl;
+//     cout << "The age of emp1 is : " << hisaans.age << endl; 
+//     cout<< "The salary of emp1 is : " << hisaans.salary << endl; 
+//     cout<< "The grade of Emp1 is : " << hisaans.grade << endl;
 
-cout<<endl;
-    cout << "The age of emp2 is : " << my_hisaan.age << endl; 
-    cout<< "The salary of emp2 is : " << my_hisaan.salary << endl; 
-    cout<< "The grade of Emp2 is : " << my_hisaan.grade << endl;
+// cout<<endl;
+//     cout << "The age of emp2 is : " << my_hisaan.age << endl; 
+//     cout<< "The salary of emp2 is : " << my_hisaan.salary << endl; 
+//     cout<< "The grade of Emp2 is : " << my_hisaan.grade << endl;
+
+
+    struct student s1;
+    cout<<"Enter your name , age , DOB , grade : "<<endl;
+    cin>>s1.name>>s1.age>>s1.DOB>>s1.grade;
+
+    cout<<"The name of student is "<<s1.name<<" The age of student is "<<s1.age<<" The year of DOB of student is "<<s1.DOB<<" And finally the grade of student is "<<s1.grade<<endl;;
     return 0;
 }

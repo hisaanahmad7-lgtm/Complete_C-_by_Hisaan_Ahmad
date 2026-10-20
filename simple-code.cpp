@@ -19,7 +19,7 @@ int main() {
     cout<<"Enter name in string age in numbers and grade in char:";
     cin>>e1.name>>e1.age>>e1.grade;
 
-    cout<<"The name of employee is "<<e1.name<<" The age of emploee is "<<e1.age<<" And the grade of employee is... "<<e1.grade<<endl;
+    cout<<"The name of Employee is "<<e1.name<<" The age of Employee is "<<e1.age<<" And the grade of Employee is... "<<e1.grade<<endl;
 greet("Hisaan Ahmad");
     return 0;
 }
