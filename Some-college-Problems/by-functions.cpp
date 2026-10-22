@@ -15,6 +15,8 @@ int main() {
     cout<<"Sum is "<<a+b+c<<endl;
     cout<<"Sum is "<<float(a+b+c)<<endl;
     cout<<typeid(a).name()<<endl;
+
+    
     string my_star(10, '*'); 
     cout << my_star << endl;
     return 0;
