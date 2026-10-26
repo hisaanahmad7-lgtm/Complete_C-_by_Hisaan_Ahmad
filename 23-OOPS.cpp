@@ -43,6 +43,8 @@ void chng_in_DOB(student &emp, int d) {
     }
 }
 
+
+
 class employee {
 private:
     string ph_no;
