@@ -31,15 +31,15 @@ public:
         cout << "Age: " << age << ", DOB: " << DOOB << ", Name: " << name << endl;
     }
 
-    friend void chng_in_DOB(student &emp, int d);
+    friend void chng_in_DOB(student &std, int d);
 };
 
-void chng_in_DOB(student &emp, int d) {
+void chng_in_DOB(student &std, int d) {
     if (d > 2026 || d < 1900) {
         cout << "Invalid DOB!" << endl;
     } else {
-        emp.DOOB = d;
-        cout << "DOB updated successfully: " << emp.DOOB << endl;
+        std.DOOB = d;
+        cout << "DOB updated successfully: " << std.DOOB << endl;
     }
 }
 
