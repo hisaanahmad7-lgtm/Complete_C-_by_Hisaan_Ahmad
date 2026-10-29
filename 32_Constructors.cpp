@@ -3,6 +3,13 @@
 
 using namespace std;
 
+
+class Demo{
+    public:
+    Demo(){
+        cout<<"Good how are you..."<<endl;
+    }
+};
 class Car {
 private:
     string brand;
@@ -22,6 +29,7 @@ public:
 };
 
 int main() {
+    Demo d;
     Car myCar("Toyota\n", "Corolla\n", 2023);
 
     myCar.displayDetails(); 
