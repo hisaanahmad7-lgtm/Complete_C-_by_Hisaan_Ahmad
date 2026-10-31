@@ -4,6 +4,38 @@ using namespace std;
 enum OrderStatus { PENDING, PROCESSING, SHIPPED, DELIVERED, CANCELLED };
 
 int main() {
+
+    int marks;
+    cout << "Enter your marks (0-100): ";
+    cin >> marks;
+
+    switch (marks / 10) {
+        case 10:
+        case 9:
+            cout << "Grade: A+ (Outstanding)";
+            break;
+        case 8:
+            cout << "Grade: A (Excellent)";
+            break;
+        case 7:
+            cout << "Grade: B (Good)";
+            break;
+        case 6:
+            cout << "Grade: C (Average)";
+            break;
+        case 5:
+            cout << "Grade: D (Pass)";
+            break;
+        default:
+            if (marks >= 0 && marks < 50)
+                cout << "Grade: F (Fail)";
+            else
+                cout << "Invalid marks entered!";
+    }
+
+
+
+
     int inputVal;
     OrderStatus currentStatus;
     
@@ -18,26 +50,31 @@ int main() {
     cin >> inputVal;
 
     currentStatus = static_cast<OrderStatus>(inputVal);
-
+try{
     switch (currentStatus) {
         case PENDING:
-            cout << "Aapka order mil gaya hai, verification pending hai.\n";
+            cout << "Your order is recieved, verification Is pending...\n";
             break;
         case PROCESSING:
-            cout << "Aapka order pack ho raha hai.\n";
+            cout << "your order is packing.\n";
             break;
         case SHIPPED:
-            cout << "Good news! Aapka order dispatch ho chuka hai aur raste mein hai.\n";
+            cout << "Good news! your order is dispatched.\n";
             break;
         case DELIVERED:
-            cout << "Order successfully deliver ho gaya hai. Thank you!\n";
+            cout << "Order is delivered successfuly.. Thank you!\n";
             break;
         case CANCELLED:
-            cout << "Yeh order cancel kar diya gaya hai.\n";
+            cout << "This order has been cancelled...\n";
             break;
         default:
-            cout << "Unknown order status.\n";
+        cout << "Unknown order status.\n";
     }
+}
+catch(const char*msg){
+    cout<<"Error is"<<msg;
+}
 
+    
     return 0;
 }
