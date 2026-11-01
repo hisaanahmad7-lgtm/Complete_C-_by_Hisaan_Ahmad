@@ -5,6 +5,7 @@ using namespace std;
 
 int main() {
     // Problem no 1
+
 try{
     int unit;
     cout<<"Enter the units you have consumed: "<<endl;
@@ -41,6 +42,7 @@ catch(const char* msg){
     cout<<"Error caught: "<<msg<<endl;
 }
 
+
     // Problem no 2 
 try{
     float inp_balance;
@@ -70,6 +72,7 @@ catch(const char* msg){
 
 
     // Problem no 3 
+
 try{
     float shp_amount;
     cout<<"ENter the shopping amount :"<<endl;
@@ -117,6 +120,7 @@ catch(const char* msg){
 
 
     // Problem no 4 
+
 try{
     int user_balance;
     cout<<"Enter the balace you current have: "<<endl;
@@ -130,7 +134,7 @@ try{
         cout<<"Recommended package____15GB"<<endl;
     }
 
-    if(user_balance>=200 && user_balance<=299 ){
+    else if(user_balance>=200 && user_balance<=299 ){
         cout<<"Recommended package____10GB"<<endl;
     }
 
