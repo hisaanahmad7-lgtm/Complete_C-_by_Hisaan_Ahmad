@@ -71,7 +71,7 @@ try{
         cout << "Unknown order status.\n";
     }
 }
-catch(const char*msg){
+catch(const char* msg){
     cout<<"Error is"<<msg;
 }
 

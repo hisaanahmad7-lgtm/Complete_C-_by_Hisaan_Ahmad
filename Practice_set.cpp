@@ -5,15 +5,15 @@ using namespace std;
 
 int main() {
     // Problem no 1
-
+try{
     int unit;
     cout<<"Enter the units you have consumed: "<<endl;
     cin>>unit;
 
-
     if(unit<0){
         cout<<"Incorrect value: "<<endl;
         exit(0);
+        throw 404;
     }
 
     else if(unit<=100){
@@ -33,12 +33,16 @@ int main() {
     }
     else{
         cout<<"Incorrect value!"<<endl;
+        cerr<<"Incorrect value!"<<endl;
         exit(0);
     }
-
+}
+catch(const char* msg){
+    cout<<"Error caught: "<<msg<<endl;
+}
 
     // Problem no 2 
-
+try{
     float inp_balance;
     float fetch_balance;
     cout<<"Enter the amount of balance: "<<endl;
@@ -49,6 +53,7 @@ int main() {
 
     if(inp_balance<=0){
         cout<<"Sorry too low balance!"<<endl;
+        throw "Error 404: Insufficient balance!";
     }
     else if (inp_balance>0){
         inp_balance = inp_balance - fetch_balance;
@@ -58,32 +63,42 @@ int main() {
         cout<<"Invalid input"<<endl;
         exit(0);
     }
+}
+catch(const char* msg){
+    cout<<"Error caught: "<<msg<<endl;
+}
 
 
     // Problem no 3 
-
+try{
     float shp_amount;
     cout<<"ENter the shopping amount :"<<endl;
     cin>>shp_amount;
+
+
+    if(shp_amount<0){
+        cout<<"Invalid input"<<endl;
+        throw "Error 404: Invalid input!";
+    }
     int disc = 0;
 
     if(shp_amount>=10000){
         disc = ((shp_amount * 20) / 100);
-        cout<<"You take "<<disc<<" Balance"<<endl;
+        cout<<"You take "<<disc<<" Discount..."<<endl;
         disc = shp_amount - disc;
         cout<<" The amount you have pay is  :"<<disc<<endl;
     }
 
     else if(shp_amount>=5000 && shp_amount<=9999 ){
         disc = ((shp_amount * 15) / 100);
-        cout<<"You take "<<disc<<" Balance"<<endl;
+        cout<<"You take "<<disc<<" Discount..."<<endl;
         disc = shp_amount - disc;
         cout<<" The amount you have pay is  :"<<disc<<endl;
     }
 
     else if(shp_amount>=2000 && shp_amount<=4999 ){
         disc = ((shp_amount * 10) / 100);
-        cout<<"You take "<<disc<<" Balance"<<endl;
+        cout<<"You take "<<disc<<" Discount..."<<endl;
         disc = shp_amount - disc;
         cout<<" The amount you have pay is  :"<<disc<<endl;
     }
@@ -94,9 +109,15 @@ int main() {
         cout<<"Invalid input"<<endl;
         exit(0);
     }
+}
+catch(const char* msg){
+    cout<<"Error caught: "<<msg<<endl;
+}
+
+
 
     // Problem no 4 
-
+try{
     int user_balance;
     cout<<"Enter the balace you current have: "<<endl;
     cin>>user_balance;
@@ -121,5 +142,9 @@ int main() {
         cout<<"Invalid input!"<<endl;
         exit(0);
     }
+}
+catch(const char* msg){
+    cout<<"Error caught: "<<msg<<endl;
+}
     return 0;
 }

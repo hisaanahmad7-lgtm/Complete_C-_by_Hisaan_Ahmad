@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-
+// This code will not execute dont try to run this this code is only written for learning purpose.....
 void checkAge(int age) {
     if (age < 18) {
         throw "Access Denied!";
