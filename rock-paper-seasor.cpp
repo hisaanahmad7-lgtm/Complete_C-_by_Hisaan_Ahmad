@@ -31,10 +31,11 @@ cin >> userChoice;
 
     if (userChoice == "Exit" || userChoice == "exit") {
         cout << "Exiting the game." << endl;
-        // break;
 
         cout << "Total Wins: " << totalWins << endl;
         cout << "Total Losses: " << totalLosses << endl;
+
+        break;
     }
 
 
