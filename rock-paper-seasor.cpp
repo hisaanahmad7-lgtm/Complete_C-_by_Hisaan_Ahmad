@@ -40,28 +40,28 @@ cin >> userChoice;
 
 
     else if (userChoice == computerChoice) {
-        cout << "It's a tie!" << endl;
+        cout << "Computer chooses " << computerChoice << ". You choose " << userChoice << ". It's a tie!" << endl;
     }
 
     else if ((userChoice == "Rock" || userChoice == "rock") && (computerChoice == "Scissors" || computerChoice == "scissors")) {
-        cout << "You win!" << endl;
+        cout << "Computer chooses " << computerChoice << ". You choose " << userChoice << ". You win!" << endl;
         totalWins++;
     }
 
     else if ((userChoice == "Paper" || userChoice == "paper") && (computerChoice == "Rock" || computerChoice == "rock")) {
-        cout << "You win!" << endl;
+        cout << "Computer chooses " << computerChoice << ". You choose " << userChoice << ". You win!" << endl;
         totalWins++;
     }
 
     else if ((userChoice == "Scissors" || userChoice == "scissors") && (computerChoice == "Paper" || computerChoice == "paper")) {
-        cout << "You win!" << endl;
+    cout << "Computer chooses " << computerChoice << ". You choose " << userChoice << ". You win!" << endl;
         totalWins++;
     }
 
     else if ((userChoice == "Rock" || userChoice == "rock") || 
             (userChoice == "Paper" || userChoice == "paper") || 
             (userChoice == "Scissors" || userChoice == "scissors")) {
-            cout << "Computer wins!" << endl;
+            cout << "Computer chooses " << computerChoice << ". You choose " << userChoice << ". Computer wins!" << endl;
             totalLosses++;
         }
     else{
@@ -70,6 +70,7 @@ cin >> userChoice;
         cout<<endl;
         throw "Invalid input! Please enter Rock, Paper, Scissors, or Exit.";
     }
+    cout << endl;
     
 }
 
