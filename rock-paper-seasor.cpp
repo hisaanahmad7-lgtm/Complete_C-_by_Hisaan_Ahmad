@@ -11,13 +11,13 @@ int main() {
 
 int totalWins = 0;
 int totalLosses = 0;
-
+int tie = 0;
 
 try{
 while ((true))
 {
 
-string choices[3] = {"Rock", "Paper", "Scissors"};
+string choices[3] = {"rock", "paper", "scissors"};
 srand(time(0));
 
 string computerChoice = choices[rand() % 3];
@@ -34,6 +34,7 @@ cin >> userChoice;
 
         cout << "Total Wins: " << totalWins << endl;
         cout << "Total Losses: " << totalLosses << endl;
+        cout << "Total Ties: " << tie << endl;
 
         break;
     }
@@ -41,6 +42,7 @@ cin >> userChoice;
 
     else if (userChoice == computerChoice) {
         cout << "Computer chooses " << computerChoice << ". You choose " << userChoice << ". It's a tie!" << endl;
+        tie++;
     }
 
     else if ((userChoice == "Rock" || userChoice == "rock") && (computerChoice == "Scissors" || computerChoice == "scissors")) {
