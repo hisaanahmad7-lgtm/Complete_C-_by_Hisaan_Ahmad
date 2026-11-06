@@ -4,7 +4,7 @@ using namespace std;
 
 
 class nust{
-    int Aura;
+    string Aura;
     public:
     int rank;
     int campus;
@@ -12,8 +12,8 @@ class nust{
 
 
     void getRank(int r , int c , string loc);
-    int getAura(void);
-    void setAura(int a1);
+    string getAura(void);
+    void setAura(string a1);
     void setRank(void);
 
     ~nust(){
@@ -21,11 +21,11 @@ class nust{
     }
 };
 
-int nust :: getAura(void){
+string nust :: getAura(void){
     return Aura;
 }
 
-void nust:: setAura(int a1){
+void nust:: setAura(string a1){
     Aura = a1;
 }
 
@@ -46,7 +46,8 @@ void nust::setRank(void){
 
 class UW : public nust{
     public:
-    void getRank(int r1 , int c1 , string locs);
+    string Aura;
+    void getRank(int r1 , int c1 , string locs , string Ar);
     void setRank(void);
 
     ~UW(){
@@ -54,29 +55,30 @@ class UW : public nust{
     }
 };
 
-void UW::getRank(int r1 , int c1 , string locs){
+void UW::getRank(int r1 , int c1 , string locs , string Ar ){
     rank = r1;
     campus = c1;
     location = locs;
+    Aura = Ar;
 }
 
 void UW::setRank(void){
     cout<<"The Rank of UW is: "<<rank<<endl;
     cout<<"The Campus of UW are: "<<campus<<endl;
     cout<<"The Location of UW is: "<<location<<endl;
+    cout<<"The Aura of UW is: "<<Aura<<endl;
 }
 int main() {
     nust n1;
     n1.getRank(2, 3, "Islamabad");
     n1.getAura();
-    n1.setAura(1000);
+    n1.setAura("1000++");
     n1.setRank();
-    
-    
+
     
     cout<<endl;
     UW u1;
-    u1.getRank(12 , 4 , "Taxila");
+    u1.getRank(12 , 4 , "Taxila" , "∞♾");
     u1.setRank();
 
     return 0;
