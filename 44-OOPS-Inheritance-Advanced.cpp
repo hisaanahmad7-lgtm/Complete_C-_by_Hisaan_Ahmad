@@ -78,7 +78,7 @@ int main() {
     
     cout<<endl;
     UW u1;
-    u1.getRank(12 , 4 , "Taxila" , "∞♾");
+    u1.getRank(12 , 4 , "Taxila" , "♾");
     u1.setRank();
 
     return 0;

@@ -5,7 +5,7 @@ using namespace std;
 int main() { 
 
     // Problem  no 1 
-<<<<<<< HEAD
+// <<<<<<< HEAD
     int num, originalNum, remainder, sum = 0;
 
     cout << "Enter a three-digit number: "; 
@@ -19,28 +19,28 @@ int main() {
         num /= 10; // Remove the last digit from the number
     }
 
-=======
+// =======
 
     
-    int num, originalNum, remainder, sum = 0;
+    // int nums, originalNum, remainder, sum = 0;
 
-    cout << "Enter a three-digit number: "; 
-    cin >> num; 
+    // cout << "Enter a three-digit number: "; 
+    // cin >> nums; 
 
-    originalNum = num; // Store the original number to compare later
+    // originalNum = nums; // Store the original number to compare later
 
-    while (num != 0) { // Loop to process each digit until the number becomes 0
-        remainder = num % 10; // Extract the last digit of the number
-        sum += remainder * remainder * remainder; // Cube the digit and add it to the sum
-        num /= 10; // Remove the last digit from the number
-    }
+    // while (nums != 0) { // Loop to process each digit until the number becomes 0
+    //     remainder = nums% 10; // Extract the last digit of the number
+    //     sum += remainder * remainder * remainder; // Cube the digit and add it to the sum
+    //     num /= 10; // Remove the last digit from the number
+    // }
 
->>>>>>> ed04b5d (File related to inheretance added successfuly...)
-    if (sum == originalNum) { 
-        cout << originalNum << " is an Armstrong number.";
-    } else {
-        cout << originalNum << " is not an Armstrong number."; 
-    }
+// >>>>>>> ed04b5d (File related to inheretance added successfuly...)
+    // if (sum == originalNum) { 
+    //     cout << originalNum << " is an Armstrong number.";
+    // } else {
+    //     cout << originalNum << " is not an Armstrong number."; 
+    // }
 
 
 
