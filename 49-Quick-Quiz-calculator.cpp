@@ -33,9 +33,9 @@ class alajabric_formullae{
     }
 
     void setAljebra(void){
-        cout<<"value of sinθ is :"<<sin(alphas);
-        cout<<"value of cosθ is :"<<cos(alphas);
-        cout<<"value of tanθ is :"<<tan(alphas);
+        cout<<"value of sinθ is :"<<sin(alphas)<<endl;
+        cout<<"value of cosθ is :"<<cos(alphas)<<endl;
+        cout<<"value of tanθ is :"<<tan(alphas)<<endl;
         // cout<<"value of secθ is :"<<sec(alpha);
     }
 };

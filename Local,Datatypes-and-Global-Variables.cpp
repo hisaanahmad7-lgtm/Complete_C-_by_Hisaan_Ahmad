@@ -30,6 +30,8 @@ int main(){
     char character = 'A';
 
 
+
+
     // cout<<"Enter the radius of circle: "<<endl; 
     // cin>>r;
     cout<<"The sum of " <<num1<< "And" <<num2<< "is: "<<num1 + num2<<endl;
@@ -43,8 +45,6 @@ int main(){
     cout<<"The difference of " <<num1<<  " And"  <<num2<< "is: " <<sub(num1, num2)<<endl;
 
     cout<<"The sum of 2 and 3 is: "<<sum(2, 3)<<endl;\
-
-
 
 
     int localVar = 50;

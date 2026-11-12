@@ -58,6 +58,9 @@ void calc :: result(void){
     }
     
 }
+
+
+
 int main() {
 
     // int my_user;
@@ -108,6 +111,10 @@ calc c1;
 c1.getData();
 // c1.setData();
 c1.result();
+cout<<"Yes";
+
+
 
 return 0;
 }
+

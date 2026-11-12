@@ -23,3 +23,5 @@ int main() {
 greet("Hisaan Ahmad");
     return 0;
 }
+
+// cout<<"Ended"<<endl;

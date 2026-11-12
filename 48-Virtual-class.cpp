@@ -57,7 +57,6 @@ int main() {
     cout << "Liger ID: " << myLiger.id << endl;
 
 
-
     TeachingAssistant ta;
 
     ta.name = "Hisaan";
