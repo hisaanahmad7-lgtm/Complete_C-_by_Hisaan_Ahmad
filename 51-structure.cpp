@@ -3,6 +3,13 @@
 
 using namespace std;
 
+
+struct student{
+    string name;
+    int age;
+    int salary;
+    string adress;
+};
 struct employee{
     string name;
     int age;
@@ -15,6 +22,11 @@ string greet(string name){
 };
 int main() {
     
+
+    struct student s1 = {"Hisaan" , 12 , 2000 , "Housing_Colony_no_2"};
+    cout<<s1.name<<endl<<s1.age<<endl<<s1.salary<<endl<<s1.adress<<endl;
+
+
     struct employee e1;
     cout<<"Enter name in string age in numbers and grade in char:";
     cin>>e1.name>>e1.age>>e1.grade;
