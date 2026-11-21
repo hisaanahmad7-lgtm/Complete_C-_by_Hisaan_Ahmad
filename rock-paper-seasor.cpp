@@ -3,7 +3,6 @@
 #include<cstdlib>
 #include<ctime>
 
-
 using namespace std;
 
 int main() {
@@ -12,6 +11,8 @@ int main() {
 int totalWins = 0;
 int totalLosses = 0;
 int tie = 0;
+int play_Game = 1;
+
 
 try{
 while ((true))
@@ -24,9 +25,10 @@ string computerChoice = choices[rand() % 3];
 // cout << computerChoice;
 
 string userChoice;
+cout<<"You are playing game "<<play_Game<<" Time!"<<endl;
 cout << "Enter your choice (Rock, Paper, Scissors) and enter exit to leave: ";
 cin >> userChoice;
-
+play_Game++;
 
 
     if (userChoice == "Exit" || userChoice == "exit") {
@@ -70,12 +72,17 @@ cin >> userChoice;
         
         cout<<endl;
         cout<<endl;
-        throw "Invalid input! Please enter Rock, Paper, Scissors, or Exit.";
+
+        cout << "Total Wins: " << totalWins << endl;
+        cout << "Total Losses: " << totalLosses << endl;
+        cout << "Total Ties: " << tie << endl;
+        cout<<endl;
+        cout<<"Invalid input! Please enter Rock, Paper, Scissors, or Exit.";
+        exit(0);
     }
     cout << endl;
     
 }
-
 }
 
 catch(const char* error){
