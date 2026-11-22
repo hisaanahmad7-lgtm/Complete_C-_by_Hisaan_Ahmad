@@ -33,6 +33,6 @@ int main() {
     myPtr[1] = 99;
     myPtr[2] = 18800;
 
-    cout<<myPtr[0]<<endl<<myPtr[1]<<endl<<myPtr[1]<<endl;
+    cout<<myPtr[0]<<endl<<myPtr[1]<<endl<<myPtr[2]<<endl;
     return 0;
 }
