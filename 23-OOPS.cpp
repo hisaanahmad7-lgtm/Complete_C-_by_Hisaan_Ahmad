@@ -85,5 +85,9 @@ int main() {
     emp.take_data("03001234567", "Wah Cantt");
     emp.put_data(20, 2006, "Hisaan");
 
+employee *ptr = new employee;
+ptr->take_data("03452020147" , " Housing_colony_no_2");
+ptr->put_data(20 , 2008 , "Hisaan_Ahmad");
+
     return 0;
 }
