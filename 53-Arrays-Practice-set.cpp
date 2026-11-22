@@ -7,7 +7,7 @@ using namespace std;
 
 int main() {
     int count = 0;
-    int arr1[20] = {12, 44, 66, 24, 88};
+    int arr1[5] = {12, 44, 66, 24, 88};
     int n = 5;
     int greatest = INT_MIN;
     reverse(arr1, arr1 + n);

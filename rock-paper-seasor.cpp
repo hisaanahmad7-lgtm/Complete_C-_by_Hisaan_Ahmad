@@ -4,9 +4,7 @@
 #include<ctime>
 
 using namespace std;
-
 int main() {
-
 
 int totalWins = 0;
 int totalLosses = 0;
