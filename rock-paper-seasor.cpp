@@ -16,8 +16,8 @@ try{
 while ((true))
 {
 
-string choices[3] = {"rock", "paper", "scissors"};
-srand(time(0));
+string choices[3] = {"rock", "paper", "scissors"};   // Array
+srand(time(NULL));
 
 string computerChoice = choices[rand() % 3];
 // cout << computerChoice;
