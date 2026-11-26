@@ -5,7 +5,7 @@ using namespace std;
 
 int main() {
     int n;
-    cout<<"Enter a number;";
+    cout<<"Enter a number:";
     cin>>n;
     for (int i = 1; i < n; i++){
         for (int x = 1; x <= i; x++)
@@ -76,7 +76,7 @@ int main() {
     cout << endl;
 
 
-
+    cout<<endl;
     for (int i = 1; i <= 10; i++) {
         for (int j = 1; j <= 5; j++) {
             cout << j << " x " << i << " = " << j * i << "\t";
@@ -141,7 +141,36 @@ int main() {
     }
     cout << endl;
 }
-    
+
+
+    cout<<endl;
+    int myrows = 4;
+    int mycols = 6;
+
+    for (int r = 1; r <= myrows; r++) {
+        for (int c = 1; c <= mycols; c++) {
+            if (r == 1 || r == myrows || c == 1 || c == mycols) {
+                cout << "*";
+            } else {
+                cout << " ";
+            }
+        }
+        cout << endl;
+    }
+
+
+    cout<<endl;
+
+    for (int r = 1; r <= n; r++) {
+        for (int c = 1; c <= r; c++) {
+            if (c == 1 || c == r || r == n) {
+                cout << "*";
+            } else {
+                cout << " ";
+            }
+        }
+        cout << endl;
+    }
 
     return 0;
 }
