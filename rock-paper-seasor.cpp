@@ -1,7 +1,7 @@
 #include <iostream>
-#include <iomanip>
-#include<cstdlib>
-#include<ctime>
+// #include <iomanip>
+// #include<cstdlib>
+// #include<ctime>
 
 using namespace std;
 int main() {
@@ -17,7 +17,7 @@ while ((true))
 {
 
 string choices[3] = {"rock", "paper", "scissors"};   // Array
-srand(time(0));
+// srand(time(0));
 
 string computerChoice = choices[rand() % 3];
 // cout << computerChoice;
